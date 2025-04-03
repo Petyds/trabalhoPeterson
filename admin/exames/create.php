@@ -1,5 +1,5 @@
 <?php
-include '../../config.php';
+include '../conexao.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $paciente_id = $_POST['paciente_id'];

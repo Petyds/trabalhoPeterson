@@ -1,5 +1,5 @@
 <?php
-include '../../config.php';
+include '../conexao.php';
 
 $sql = "SELECT pacientes.id, usuarios.nome, pacientes.data_nascimento, pacientes.cpf, pacientes.telefone 
         FROM pacientes 

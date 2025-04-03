@@ -1,5 +1,5 @@
 <?php
-include '../../config.php';
+include '../conexao.php';
 
 $sql = "SELECT prontuarios.id, consultas.id AS consulta_id, prontuarios.diagnostico, prontuarios.prescricao, prontuarios.observacoes, prontuarios.criado_em 
         FROM prontuarios

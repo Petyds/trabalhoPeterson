@@ -1,5 +1,5 @@
 <?php
-include '../../config.php';
+include '../conexao.php';
 
 $sql = "SELECT consultas.id, pacientes.usuario_id AS paciente, medicos.usuario_id AS medico, consultas.data_hora, consultas.descricao, consultas.status 
         FROM consultas
@@ -52,7 +52,7 @@ $result = $conn->query($sql);
 </body>
 </html>
 <?php
-include '../../config.php';
+include '../conexao.php';
 
 $sql = "SELECT consultas.id, pacientes.usuario_id AS paciente, medicos.usuario_id AS medico, consultas.data_hora, consultas.descricao, consultas.status 
         FROM consultas
